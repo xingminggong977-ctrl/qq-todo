@@ -1,0 +1,11 @@
+[Unit]
+Description=QQ 待办台 · 每日摘要推送到 QQ
+After=network-online.target qq-todo.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/qq-todo
+EnvironmentFile=/opt/qq-todo/.env
+Environment=NAPCAT_WS_URL=ws://127.0.0.1:3001
+ExecStart=/usr/bin/node /opt/qq-todo/notify.mjs

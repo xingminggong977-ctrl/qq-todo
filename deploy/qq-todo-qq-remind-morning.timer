@@ -1,0 +1,11 @@
+[Unit]
+Description=QQ 待办台 · 早间到期提醒走 QQ（08:05）
+
+[Timer]
+# 服务器时区已确认是 Asia/Shanghai（timedatectl）
+OnCalendar=*-*-* 08:05:00
+Persistent=true
+Unit=qq-todo-qq-remind.service
+
+[Install]
+WantedBy=timers.target

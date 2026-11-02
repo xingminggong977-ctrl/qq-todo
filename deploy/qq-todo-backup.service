@@ -1,0 +1,18 @@
+[Unit]
+Description=QQ 待办台 · 每日数据备份（$DATA_DIR → /var/backups/qq-todo/YYYYMMDD.tar.gz）
+Documentation=file:///opt/qq-todo/deploy/README.md
+After=qq-todo.service
+Wants=qq-todo.service
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/opt/qq-todo/deploy/backup.sh
+TimeoutStartSec=10min
+# 备份是后台杂活，别和 Web 请求抢 CPU
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+
+[Install]
+WantedBy=multi-user.target

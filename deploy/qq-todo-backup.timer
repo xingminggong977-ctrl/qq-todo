@@ -1,0 +1,13 @@
+[Unit]
+Description=QQ 待办台 · 每天 03:20 触发备份
+
+[Timer]
+OnCalendar=*-*-* 03:20:00
+# 错峰，避免整点一堆任务同时起
+RandomizedDelaySec=600
+# 机器在 03:20 关机/重启时，开机后补跑一次
+Persistent=true
+Unit=qq-todo-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=QQ 待办台 · 每周复盘推送到 QQ
+Documentation=file:///opt/qq-todo/deploy/README-live.md
+After=network-online.target qq-todo.service
+Wants=network-online.target qq-todo.service
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/qq-todo
+EnvironmentFile=/opt/qq-todo/.env
+ExecStart=/usr/local/bin/node /opt/qq-todo/deploy/weekly-digest.mjs
+TimeoutStartSec=5min

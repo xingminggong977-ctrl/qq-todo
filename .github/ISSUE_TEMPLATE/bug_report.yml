@@ -1,0 +1,84 @@
+name: Bug 报告
+description: 某个功能没按预期工作，或者直接报错
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 先看这里
+
+        提交前请翻一遍 README 的「常见问题」章节：端口占用、`AUTH_TOKEN` 鉴权、NapCat 连不上、模型返回解析不出来这几类现象那里都有对应处理。
+
+        安全漏洞请**不要**开公开 issue，按 `SECURITY.md` 里写的私密渠道上报。
+
+  - type: checkboxes
+    id: precheck
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我读过 README 的「常见问题」，确认不是已覆盖的现象
+          required: true
+        - label: 我搜过现有 issue，没有重复
+          required: true
+        - label: 我贴出的日志里没有 `AUTH_TOKEN`、VAPID 私钥、模型 API Key 等敏感值
+          required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: 运行环境
+      description: Node 版本、操作系统、LLM_PROVIDER、是否开启实时订阅
+      placeholder: Node v24.x / Windows 11 / LLM_PROVIDER=stub / LIVE_ENABLED=off
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从干净 clone 开始，能照着走的最小步骤
+      placeholder: |
+        1. cp .env.example .env
+        2. npm.cmd start（或 npm start）
+        3. 打开 http://127.0.0.1:7788
+        4. 导入 fixtures/qq-export-a-sample.txt
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      placeholder: 你以为什么应该发生
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 报错信息、页面表现，或者「什么都没发生」
+      placeholder: 实际发生了什么，越具体越好
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志
+      description: 终端输出或浏览器 Console。贴之前把 token 与密钥涂掉。
+      render: shell
+      placeholder: |
+        把相关的那几行贴进来即可，不需要整个启动横幅
+    validations:
+      required: false
+
+  - type: input
+    id: selfcheck
+    attributes:
+      label: 自测结果
+      description: 如果跑过 `npm test`，贴最后一行汇总
+      placeholder: 文件 29/29 通过 · 断言 481/481 通过 · FAIL 0
+    validations:
+      required: false

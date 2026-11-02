@@ -1,0 +1,17 @@
+[Unit]
+Description=QQ 待办台（含 NapCat 只读实时订阅）
+Documentation=file:///opt/qq-todo/deploy/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/qq-todo
+EnvironmentFile=/opt/qq-todo/.env
+ExecStart=/usr/local/bin/node /opt/qq-todo/src/server/index.js
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

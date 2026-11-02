@@ -1,0 +1,45 @@
+{
+    "name":  "qq-todo",
+    "version":  "1.0.0",
+    "description":  "把 QQ 群消息自动变成待办清单的自托管 Web 应用（导入或实时订阅 → 判定 → 手机勾选）· Turn noisy QQ group chats into a clean, mobile-friendly todo list. Self-hosted, no build step, no database.",
+    "keywords":  [
+                     "qq",
+                     "todo",
+                     "todo-list",
+                     "self-hosted",
+                     "napcat",
+                     "onebot",
+                     "llm",
+                     "pwa"
+                 ],
+    "license":  "MIT",
+    "author":  "QQ-Todo contributors",
+    "homepage":  "https://github.com/xingminggong977-ctrl/qq-todo#readme",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/xingminggong977-ctrl/qq-todo.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/xingminggong977-ctrl/qq-todo/issues"
+             },
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=24"
+                },
+    "scripts":  {
+                    "start":  "node src/server/index.js",
+                    "dev":  "node --watch src/server/index.js",
+                    "import":  "node src/cli/import.js",
+                    "extract":  "node src/cli/extract.js",
+                    "seed":  "node src/cli/seed.js",
+                    "smoke":  "node scripts/smoke.mjs",
+                    "test":  "node scripts/test.mjs",
+                    "check-secrets":  "node scripts/check-secrets.mjs"
+                },
+    "dependencies":  {
+                         "mammoth":  "^1.13.0",
+                         "pdf-parse":  "^2.4.5",
+                         "qrcode":  "^1.5.4",
+                         "web-push":  "^3.6.7"
+                     }
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=QQ 待办台 · 每 10 分钟扫一次新待办
+
+[Timer]
+# 每小时的 0/10/20/30/40/50 分各扫一次（限流与「同 id 不重推」在脚本里兜着）
+OnCalendar=*:0/10
+# 关机/重启后补跑一次，避免错过整段时间窗口
+Persistent=true
+Unit=qq-todo-notify-new.service
+
+[Install]
+WantedBy=timers.target

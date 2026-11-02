@@ -1,0 +1,10 @@
+[Unit]
+Description=QQ 待办台 · 每天 08:00 推送待办摘要
+
+[Timer]
+OnCalendar=*-*-* 08:00:00
+Persistent=true
+Unit=qq-todo-notify.service
+
+[Install]
+WantedBy=timers.target

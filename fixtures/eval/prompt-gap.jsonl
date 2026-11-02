@@ -1,0 +1,40 @@
+﻿{"id":"a01","groupName":"示例年级群","sender":"王老师","ts":"2026-10-09 20:31","text":"明天的心理健康讲座在博学楼报告厅，19:00 开始，人到了签到就行。","label":"todo","expectTitle":"参加心理健康讲座","expectDeadline":"2026-10-10","expectConstraintMin":1}
+{"id":"a02","groupName":"示例年级群","sender":"王老师","ts":"2026-10-10 08:05","text":"@全体成员 2027年城乡居民医保参保登记及缴费：先在示例校园平台登记参保信息，再用微信缴费，10月30日前完成，逾期影响报销。","label":"todo","expectTitle":"医保参保登记缴费","expectDeadline":"2026-10-30","expectConstraintMin":2}
+{"id":"a03","groupName":"示例年级群","sender":"王老师","ts":"2026-10-10 08:06","text":"缴费凭证截图发班长汇总，文件名 学号+医保。","label":"todo","expectTitle":"医保凭证发班长","expectDeadline":"2026-10-30","expectConstraintMin":2}
+{"id":"a04","groupName":"示例年级群","sender":"王老师","ts":"2026-10-11 08:20","text":"@全体成员 关于体测安全风险告知书的通知：附件6 请自行打印、学生签字后本周五前交到1号楼213辅导员办公室，未交的不安排体测。","label":"todo","expectTitle":"交体检告知书","expectDeadline":"2026-10-16","expectConstraintMin":1}
+{"id":"a05","groupName":"示例年级群","sender":"王老师","ts":"2026-10-11 08:22","text":"补充：告知书右上角写清班级和学号，不要只签名。","label":"todo","expectTitle":"交体检告知书","expectDeadline":"2026-10-16","expectConstraintMin":1}
+{"id":"a06","groupName":"示例年级群","sender":"王老师","ts":"2026-10-11 08:40","text":"@全体成员 示例学院学生会 10月12日 19:30 在西楼117 开会，每班推 2 名代表参加，提前十分钟到。","label":"todo","expectTitle":"推代表参加例会","expectDeadline":"2026-10-12","expectConstraintMin":2}
+{"id":"a07","groupName":"示例年级群","sender":"罗雨","ts":"2026-10-11 12:11","text":"有人一起吃饭吗，二食堂三楼新开的那家","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"a08","groupName":"示例年级群","sender":"张航","ts":"2026-10-11 12:15","text":"带我一个","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"a09","groupName":"示例年级群","sender":"王老师","ts":"2026-10-11 13:02","text":"刚问了下，体测时间还是下周一上午，具体分组名单明天发群里。","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"a10","groupName":"示例年级群","sender":"陈默","ts":"2026-10-11 13:20","text":"老师那个名单是不是按学号排的","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"a11","groupName":"示例年级群","sender":"王老师","ts":"2026-10-11 18:40","text":"@全体成员 国家助学金申请材料：填写附件2申请表，附家庭情况说明（手写）和上一学年成绩单，10月20日前交到学院教务办。","label":"todo","expectTitle":"提交助学金材料","expectDeadline":"2026-10-20","expectConstraintMin":3}
+{"id":"a12","groupName":"示例年级群","sender":"吴迪","ts":"2026-10-11 22:10","text":"还有谁没交团费的，抓紧一下","label":"todo","expectTitle":"补交团费","expectDeadline":null,"expectConstraintMin":0}
+{"id":"b01","groupName":"计科2201班级群","sender":"学委","ts":"2026-10-08 15:00","text":"本周日 22:00 前把实验报告传到学习通，逾期不候。","label":"todo","expectTitle":"提交实验报告","expectDeadline":"2026-10-11","expectConstraintMin":1}
+{"id":"b02","groupName":"计科2201班级群","sender":"学委","ts":"2026-10-08 15:04","text":"接上条，补充：只收 PDF，文件名按学号命名。","label":"todo","expectTitle":"按格式交实验报告","expectDeadline":"2026-10-11","expectConstraintMin":2}
+{"id":"b03","groupName":"计科2201班级群","sender":"罗雨","ts":"2026-10-08 15:20","text":"这报告你们写完了吗，我卡在第二问","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b04","groupName":"计科2201班级群","sender":"班长","ts":"2026-10-09 09:00","text":"@全体成员 关于收取本学期班费的通知：每人 50 元，微信转班长，10月18日前完成。","label":"todo","expectTitle":"交本学期班费","expectDeadline":"2026-10-18","expectConstraintMin":2}
+{"id":"b05","groupName":"计科2201班级群","sender":"周天","ts":"2026-10-09 09:30","text":"班长班费能不能支付宝","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b06","groupName":"计科2201班级群","sender":"班长","ts":"2026-10-09 10:12","text":"可以","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b07","groupName":"计科2201班级群","sender":"学委","ts":"2026-10-10 16:40","text":"作业提交截止 10月12日24点，学习通上传，命名 学号_姓名。","label":"todo","expectTitle":"提交作业","expectDeadline":"2026-10-12","expectConstraintMin":2}
+{"id":"b08","groupName":"计科2201班级群","sender":"罗雨","ts":"2026-10-10 21:00","text":"有人明天早八一起去西楼自习吗，占两个座","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b09","groupName":"计科2201班级群","sender":"班长","ts":"2026-10-11 09:00","text":"@全体成员 周三下午 3点 教学楼 4-101 开班会，请带好笔记本记录，不能来的提前跟班长请假。","label":"todo","expectTitle":"参加班会","expectDeadline":"2026-10-14","expectConstraintMin":2}
+{"id":"b10","groupName":"计科2201班级群","sender":"李想","ts":"2026-10-11 09:05","text":"班会是不是要签到","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b11","groupName":"计科2201班级群","sender":"学委","ts":"2026-10-11 11:20","text":"国庆期间的实验课调课申请已经交上去了，等通知。","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"b12","groupName":"计科2201班级群","sender":"班长","ts":"2026-10-11 20:00","text":"谁有充电宝借我一下，明天还","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"c01","groupName":"示例学院学生会","sender":"文宣部","ts":"2026-10-09 18:00","text":"10月12日19:30 西楼117 例会，各部部长带本部门月度计划，纸质一份。","label":"todo","expectTitle":"参加学生会例会","expectDeadline":"2026-10-12","expectConstraintMin":2}
+{"id":"c02","groupName":"示例学院学生会","sender":"文宣部","ts":"2026-10-09 18:05","text":"另外，PPT 版计划发我邮箱，按部门命名。","label":"todo","expectTitle":"发月度计划PPT","expectDeadline":"2026-10-12","expectConstraintMin":1}
+{"id":"c03","groupName":"示例学院学生会","sender":"组织部","ts":"2026-10-10 12:00","text":"运动会报名表截止明天中午，报名项目每人限两项。","label":"todo","expectTitle":"交运动会报名表","expectDeadline":"2026-10-11","expectConstraintMin":1}
+{"id":"c04","groupName":"示例学院学生会","sender":"陈晨","ts":"2026-10-10 12:30","text":"去年运动会照片还有吗，想发个回顾","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"c05","groupName":"示例学院学生会","sender":"文宣部","ts":"2026-10-11 15:00","text":"@全体成员 关于评选优秀学生干部的通知：填写附件3，附事迹材料（1000字以内），下周一前交组织部。","label":"todo","expectTitle":"申报优秀学生干部","expectDeadline":"2026-10-12","expectConstraintMin":2}
+{"id":"c06","groupName":"示例学院学生会","sender":"王然","ts":"2026-10-11 15:20","text":"事迹材料可以手写吗","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"d01","groupName":"贵大跑团","sender":"罗雨","ts":"2026-10-10 07:10","text":"今晚八点老地方跑步，来不来","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"d02","groupName":"贵大跑团","sender":"张航","ts":"2026-10-10 08:00","text":"跑","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"d03","groupName":"贵大跑团","sender":"陈默","ts":"2026-10-11 08:30","text":"图书馆四楼现在有座吗","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"d04","groupName":"贵大跑团","sender":"匿名","ts":"2026-10-11 09:40","text":"有没有人要拼单奶茶，还差两杯","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"d05","groupName":"贵大跑团","sender":"宿管阿姨","ts":"2026-10-11 19:00","text":"@全体成员 今晚22:30 查寝，请回宿舍，不在的按晚归登记。","label":"todo","expectTitle":"按时回宿舍","expectDeadline":"2026-10-11","expectConstraintMin":1}
+{"id":"d06","groupName":"贵大跑团","sender":"李想","ts":"2026-10-11 21:30","text":"笑死，刚跑回去被阿姨抓了","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"e01","groupName":"电路原理(1班)","sender":"助教","ts":"2026-10-09 16:00","text":"第三章课后习题 3-5、3-7、3-9 明天上课前交电子版，拍照上传到课程群相册。","label":"todo","expectTitle":"交第三章习题","expectDeadline":"2026-10-10","expectConstraintMin":2}
+{"id":"e02","groupName":"电路原理(1班)","sender":"助教","ts":"2026-10-10 19:00","text":"@全体成员 下周三 8:00 电路原理期中考试，地点另行通知，带上学生证和计算器。","label":"todo","expectTitle":"参加电路期中考试","expectDeadline":"2026-10-14","expectConstraintMin":1}
+{"id":"e03","groupName":"电路原理(1班)","sender":"王一","ts":"2026-10-10 19:30","text":"老师计算器用哪种，卡西欧991可以吗","label":"noise","expectTitle":"","expectDeadline":null}
+{"id":"e04","groupName":"电路原理(1班)","sender":"助教","ts":"2026-10-11 10:00","text":"上次的习题 3-5 有勘误，题干第二个电阻是10欧，重做一下。","label":"todo","expectTitle":"重做习题3-5","expectDeadline":"2026-10-10","expectConstraintMin":0}

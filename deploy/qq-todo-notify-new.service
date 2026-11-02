@@ -1,0 +1,12 @@
+[Unit]
+Description=QQ 待办台 · 新待办即时提醒（QQ 私聊）
+After=network-online.target qq-todo.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/qq-todo
+EnvironmentFile=/opt/qq-todo/.env
+# 只读 store.json，不依赖 qq-todo 在线；node 在 /usr/local/bin/node
+ExecStart=/usr/local/bin/node /opt/qq-todo/deploy/notify-new.mjs
+TimeoutStartSec=2min

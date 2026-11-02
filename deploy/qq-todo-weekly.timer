@@ -1,0 +1,12 @@
+[Unit]
+Description=QQ 待办台 · 每周日 20:00 推送本周复盘
+
+[Timer]
+# 服务器时区已确认是 Asia/Shanghai（timedatectl）
+OnCalendar=Sun 20:00:00
+# 那台机器周日 20:00 关机/重启过，开机后补跑一次
+Persistent=true
+Unit=qq-todo-weekly.service
+
+[Install]
+WantedBy=timers.target

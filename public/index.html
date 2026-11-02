@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>QQ 待办台</title>
+<meta name="theme-color" content="#0b0b0f">
+<meta name="description" content="把 QQ 群消息整理成真正需要你处理的待办">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="待办台">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-180.png" sizes="180x180">
+<link rel="apple-touch-icon" href="/icon-512.png" sizes="512x512">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="install-hint" id="install-hint" hidden>
+    <span class="install-text" id="install-text"></span>
+    <button class="install-ok" id="install-btn" hidden>安装</button>
+    <button class="install-close" id="install-close" aria-label="关闭安装提示">✕</button>
+  </div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-dot"></span>待办台</div>
+    <button class="install-cta" id="install-cta" type="button" hidden>装到桌面</button>
+    <div class="live" id="live-indicator" hidden><span class="live-dot"></span>实时接收中</div>
+  </header>
+
+  <nav class="tabs" id="tabs" role="tablist" aria-label="主导航">
+    <button class="tab is-active" data-tab="messages" role="tab" aria-selected="true">消息流</button>
+    <button class="tab" data-tab="todos" role="tab" aria-selected="false">待办台</button>
+    <button class="tab" data-tab="stats" role="tab" aria-selected="false">统计</button>
+  </nav>
+
+  <main id="view" class="view" role="tabpanel"></main>
+
+  <p class="foot" id="foot">数据只存在本机</p>
+</div>
+
+<input type="file" id="file-input" accept=".txt,text/plain" hidden>
+
+<div class="drawer-overlay" id="drawer-overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+  <div class="drawer-head">
+    <h2 id="drawer-title">完整原文</h2>
+    <button class="icon-btn" id="drawer-close" data-action="close-drawer" aria-label="关闭原文">✕</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
+

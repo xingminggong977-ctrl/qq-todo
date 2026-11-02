@@ -1,0 +1,73 @@
+{
+  "note": "自测 6 用的假 OneBot 11 事件序列：只描述线上会到达的字段形状，不连接任何真实服务。",
+  "ownerQq": "10001",
+  "events": [
+    {
+      "case": "owner-private-text",
+      "expect": "accepted",
+      "payload": {
+        "time": 1793000100,
+        "self_id": 10086,
+        "post_type": "message",
+        "message_type": "private",
+        "sub_type": "friend",
+        "message_id": 9601,
+        "user_id": 10001,
+        "sender": { "user_id": 10001, "nickname": "小D", "card": "" },
+        "message": [{ "type": "text", "data": { "text": "明天上午九点交报告" } }]
+      }
+    },
+    {
+      "case": "stranger-private-text",
+      "expect": "dropped",
+      "payload": {
+        "time": 1793000200,
+        "self_id": 10086,
+        "post_type": "message",
+        "message_type": "private",
+        "sub_type": "friend",
+        "message_id": 9602,
+        "user_id": 10002,
+        "sender": { "user_id": 10002, "nickname": "陌生人", "card": "" },
+        "message": [{ "type": "text", "data": { "text": "陌生人发来的私聊，不许写库" } }]
+      }
+    },
+    {
+      "case": "group-in-allowlist",
+      "expect": "accepted",
+      "payload": {
+        "time": 1793000300,
+        "self_id": 10086,
+        "post_type": "message",
+        "message_type": "group",
+        "sub_type": "normal",
+        "message_id": 9603,
+        "group_id": 723456789,
+        "group_name": "示例放行群",
+        "user_id": 20002,
+        "sender": { "user_id": 20002, "nickname": "罗雨", "card": "罗雨" },
+        "message": [
+          { "type": "text", "data": { "text": "周五下午交实验报告" } },
+          { "type": "at", "data": { "qq": "all" } }
+        ]
+      }
+    },
+    {
+      "case": "group-outside-allowlist",
+      "expect": "dropped",
+      "payload": {
+        "time": 1793000400,
+        "self_id": 10086,
+        "post_type": "message",
+        "message_type": "group",
+        "sub_type": "normal",
+        "message_id": 9604,
+        "group_id": 723456790,
+        "group_name": "未放行的群",
+        "user_id": 20003,
+        "sender": { "user_id": 20003, "nickname": "路人", "card": "" },
+        "message": [{ "type": "text", "data": { "text": "白名单外的群消息" } }]
+      }
+    }
+  ]
+}

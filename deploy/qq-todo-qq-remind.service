@@ -1,0 +1,12 @@
+[Unit]
+Description=QQ 待办台 · 到期提醒（QQ 私聊）
+After=network-online.target qq-todo.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/qq-todo
+EnvironmentFile=/opt/qq-todo/.env
+# 服务器 node 在 /usr/local/bin/node（没有 /usr/bin/node，notify 曾因此在 inactive 里躺了很久）
+ExecStart=/usr/local/bin/node /opt/qq-todo/remind.mjs
+TimeoutStartSec=2min

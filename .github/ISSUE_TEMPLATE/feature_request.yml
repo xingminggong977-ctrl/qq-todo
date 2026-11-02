@@ -1,0 +1,61 @@
+name: 功能建议
+description: 想让这个东西多做点什么，或者换个做法
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 提之前
+
+        README 的「特性」和「常见问题」两节先扫一眼，`docs/SPEC.md` 里写了几条刻意的取舍（比如「无法判定」为什么不进待办台）。
+        和这些设计相冲突的建议也可以提，但请说明你认为原来的取舍错在哪。
+
+  - type: textarea
+    id: scene
+    attributes:
+      label: 使用场景
+      description: 你在什么情况下觉得「这里应该能自动一点」
+      placeholder: 我每天晚上要手工把今天的作业通知抄到另一个地方，因为……
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望行为
+      description: 你希望它怎么做。有具体交互或输出格式更好。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternative
+    attributes:
+      label: 你现在的替代做法
+      description: 现在是怎么绕过去的？没有就写「没有」。
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 涉及哪一块
+      options:
+        - 判定与抽取
+        - 附件与图片
+        - 实时订阅（NapCat / OneBot）
+        - 提醒与推送
+        - 前端界面
+        - 部署与脚本
+        - 文档
+        - 其他
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: 边界确认
+      options:
+        - label: 这个建议不需要引入新的运行时依赖，或者我已说明为什么非加不可
+        - label: 这个建议不改变「只读订阅」的前提（服务端不会往群里发消息）

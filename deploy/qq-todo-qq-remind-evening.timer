@@ -1,0 +1,10 @@
+[Unit]
+Description=QQ 待办台 · 晚间到期提醒走 QQ（20:00）
+
+[Timer]
+OnCalendar=*-*-* 20:00:00
+Persistent=true
+Unit=qq-todo-qq-remind.service
+
+[Install]
+WantedBy=timers.target

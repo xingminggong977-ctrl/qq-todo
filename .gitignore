@@ -1,0 +1,40 @@
+# 依赖
+node_modules/
+
+# 运行时数据（真实群消息就在里面，永远不要提交）
+data/
+.pwa-data/
+.demo-data/
+.tmp-*
+.tmp-*/
+tmp/
+
+# 本地配置与密钥
+.env
+.env.*
+!.env.example
+
+# 构建/验收产物
+.artifacts/
+.verify-*/
+.verify-data/
+.wc-verify/
+*.tgz
+*.log
+QR.png
+
+# 抓下来的媒体与临时导出
+dy_*
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# 测试临时数据目录（自测会写进来）
+.dl-data/
+.int-data/
+.docs-data/
+

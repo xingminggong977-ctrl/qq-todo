@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞（请勿开公开 issue）
+    url: https://github.com/xingminggong977-ctrl/qq-todo/security/advisories/new
+    about: 按 SECURITY.md 的流程私密上报，别在 issue 里贴漏洞细节或可直接利用的请求
+  - name: 部署与运维说明
+    url: https://github.com/xingminggong977-ctrl/qq-todo/blob/main/deploy/README.md
+    about: systemd 安装、备份、提醒定时器、TLS 相关的步骤都写在这里
+  - name: 使用问题
+    url: https://github.com/xingminggong977-ctrl/qq-todo/blob/main/README.md
+    about: 先翻 README 的「5 分钟快速开始」与「常见问题」，多数配置问题在那里就能解决
