@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [24]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 使用 Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 安装依赖
+        run: npm ci --omit=dev || npm install --omit=dev
+
+      - name: 泄漏门禁（真实域名 / IP / 令牌 / QQ 号 / 本机路径）
+        run: node scripts/check-secrets.mjs
+
+      - name: 自测（fixtures/selftests + src/live/_test）
+        run: npm test
+
+      - name: 端到端 smoke
+        run: npm run smoke
